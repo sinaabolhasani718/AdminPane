@@ -1,0 +1,58 @@
+.loginCounter {
+  background-color: #ffffff;
+  width: 420px;
+  height: 450px;
+  padding: 40px;
+  border: 1px solid #e4e4e4;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+}
+.loginCounter img {
+  width: 80px;
+  height: 85px;
+}
+.loginCounter p {
+  font-size: 24px;
+  color: #282828;
+  font-weight: 800;
+}
+.loginInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 400px;
+}
+.loginInput input,
+.loginInput button {
+  width: 100%;
+  height: 50px;
+  border-radius: 15px;
+  border: none;
+}
+
+.loginInput input {
+  background-color: #f2f2f2;
+  color: #282828;
+  font-size: 16px;
+  font-weight: 600;
+  text-indent: 15px;
+}
+.loginInput button {
+  background-color: #55a3f0;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.loginInput p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #3a8bed;
+  margin: 0px;
+  align-self: flex-start;
+}
