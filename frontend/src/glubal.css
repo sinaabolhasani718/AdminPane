@@ -15,10 +15,5 @@
 body {
   font-family: Yekan;
   margin: 0;
-  display: flex;
-  max-width: 1200px;
-  min-height: 100vh;
   background-color: #f8f8f8;
-  justify-content: center;
-  align-items: center;
 }

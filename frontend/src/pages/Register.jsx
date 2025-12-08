@@ -36,54 +36,58 @@ function Register() {
   };
 
   return (
-    <div className={styles.registerCounter}>
-      <div className={styles.registerHeder}>
-        <img src="/img/favicon1.svg" alt="" />
-        <p className={styles.title}>ثبت‌نام</p>
+    <>
+      <div className={styles.container}>
+        <div className={styles.registerCounter}>
+          <div className={styles.registerHeder}>
+            <img src="/img/favicon1.svg" alt="" />
+            <p className={styles.title}>ثبت‌نام</p>
+          </div>
+
+          <div className={styles.registerInput}>
+            <input
+              type="text"
+              placeholder="نام"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+
+            <input
+              type="password"
+              placeholder="رمز عبور"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+
+            <input
+              type="password"
+              placeholder="تکرار رمز عبور"
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+            />
+
+            <input
+              type="tel"
+              placeholder="شماره تماس"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+            />
+
+            <button onClick={submitHandler} disabled={isLoading}>
+              {isLoading ? "در حال ثبت‌نام..." : "ثبت‌نام"}
+            </button>
+
+            {error && (
+              <p style={{ color: "red", marginTop: "10px" }}>{error}</p>
+            )}
+
+            <p onClick={() => navigate("/login")}>
+              قبلاً ثبت ‌نام کرده‌اید؟ وارد شوید
+            </p>
+          </div>
+        </div>
       </div>
-
-      <div className={styles.registerInput}>
-        <input
-          type="text"
-          placeholder="نام"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
-
-        <input
-          type="password"
-          placeholder="رمز عبور"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-
-        <input
-          type="password"
-          placeholder="تکرار رمز عبور"
-          value={confirmPassword}
-          onChange={(e) => setConfirmPassword(e.target.value)}
-        />
-
-        <input
-          type="tel"
-          placeholder="شماره تماس"
-          value={phone}
-          onChange={(e) => setPhone(e.target.value)}
-        />
-
-        <button onClick={submitHandler} disabled={isLoading}>
-          {isLoading ? "در حال ثبت‌نام..." : "ثبت‌نام"}
-        </button>
-
-        {error && <p style={{ color: "red", marginTop: "10px" }}>{error}</p>}
-
-        <p
-          onClick={() => navigate("/login")}
-        >
-          قبلاً ثبت ‌نام کرده‌اید؟ وارد شوید
-        </p>
-      </div>
-    </div>
+    </>
   );
 }
 

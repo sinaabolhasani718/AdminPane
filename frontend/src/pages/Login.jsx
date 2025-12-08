@@ -29,26 +29,28 @@ function Login() {
 
   return (
     <>
-      <div className={styles.loginCounter}>
-        <div className={styles.loginHeader}>
-          <img src="/img/favicon1.svg" alt="" />
-          <p>فرم ورود</p>
-        </div>
-        <div className={styles.loginInput}>
-          <input
-            type="text"
-            placeholder="نام"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
-          <input
-            type="password"
-            placeholder="رمز عبور"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <button onClick={submitHandeler}>ورود</button>
-          <p>ایجاد حساب کاربری!</p>
+      <div className={styles.container}>
+        <div className={styles.loginCounter}>
+          <div className={styles.loginHeader}>
+            <img src="/img/favicon1.svg" alt="" />
+            <p>فرم ورود</p>
+          </div>
+          <div className={styles.loginInput}>
+            <input
+              type="text"
+              placeholder="نام"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+            <input
+              type="password"
+              placeholder="رمز عبور"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <button onClick={submitHandeler}>ورود</button>
+            <p>ایجاد حساب کاربری!</p>
+          </div>
         </div>
       </div>
     </>
