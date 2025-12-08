@@ -1,4 +1,4 @@
-.loginCounter {
+.registerCounter {
   background-color: #ffffff;
   width: 420px;
   padding: 40px;
@@ -10,32 +10,32 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.loginHeader {
+.registerHeder {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 30px;
 }
 
-.loginHeader img {
+.registerHeder img {
   width: 60px;
   height: 60px;
   margin-bottom: 10px;
 }
 
-.loginHeader p {
+.registerHeder p {
   font-size: 24px;
   font-weight: bold;
 }
 
-.loginInput {
+.registerInput {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 15px; /* فاصله بین input ها و button */
+  gap: 15px; 
 }
 
-.loginInput input {
+.registerInput input {
   padding: 12px 15px;
   border: 1px solid #ccc;
   background-color: #f2f2f2;
@@ -45,11 +45,11 @@
   transition: border 0.3s;
 }
 
-.loginInput input:focus {
+.registerInput input:focus {
   border-color: #007bff;
 }
 
-.loginInput button {
+.registerInput button {
   padding: 12px 0;
   background-color: #007bff;
   color: #fff;
@@ -61,16 +61,16 @@
   transition: background-color 0.3s;
 }
 
-.loginInput button:hover:enabled {
+.registerInput button:hover:enabled {
   background-color: #0056b3;
 }
 
-.loginInput button:disabled {
+.registerInput button:disabled {
   background-color: #99c1ff;
   cursor: not-allowed;
 }
 
-.loginInput p {
+.registerInput p {
   text-align: center;
   color: #3a8bed;
   margin-top: 10px;
@@ -79,7 +79,7 @@
   font-weight: 400;
 }
 
-.loginInput .error {
+.registerInput .error {
   color: red;
   font-size: 14px;
   text-align: center;

@@ -18,7 +18,8 @@ function Login() {
     }
     try {
       const token = await login(username, password);
-      localStorage.setItem("token", token);
+      localStorage.setItem("token", token.token);
+      console.log("login result", token);
 
       navigate("/dashboard");
     } catch (error) {
@@ -29,8 +30,8 @@ function Login() {
   return (
     <>
       <div className={styles.loginCounter}>
-        <div>
-          <img src="./public/img/favicon1.svg" alt="" />
+        <div className={styles.loginHeader}>
+          <img src="/img/favicon1.svg" alt="" />
           <p>فرم ورود</p>
         </div>
         <div className={styles.loginInput}>
@@ -46,7 +47,7 @@ function Login() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button onClick={submitHandeler}>Login</button>
+          <button onClick={submitHandeler}>ورود</button>
           <p>ایجاد حساب کاربری!</p>
         </div>
       </div>
