@@ -4,13 +4,14 @@
 ## 📸 Project Preview
 
 ### Login Page
-![Login Page](public/preview/login.png)
+![Login Page](https://github.com/sinaabolhasani718/AdminPane/tree/main/frontend/public/preview/login.png?raw=true)
 
 ### Dashboard
-![Dashboard](public/preview/dashboard.png)
+![Dashboard](https://github.com/sinaabolhasani718/AdminPane/tree/main/frontend/public/preview/dashboard.png?raw=true)
 
 ### Products Management
-![Products](public/preview/products.png)
+![Products](https://github.com/sinaabolhasani718/AdminPane/tree/main/frontend/public/preview/products.png?raw=true)
+
 
 
 
