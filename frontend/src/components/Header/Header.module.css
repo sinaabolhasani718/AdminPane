@@ -24,13 +24,14 @@
 }
 
 .headerSearch input {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   color: #333;
   border: none;
   outline: none;
   flex: 1;
   padding: 8px 0;
+  background-color: #ffffff;
 }
 
 .headerUser {
@@ -52,4 +53,14 @@
   font-weight: 300;
   color: #282828;
   margin: 0;
+}
+.headerUser button {
+  background-color: #ff4d4f;
+  color: #ffffff;
+  padding: 0 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 20px;
 }
