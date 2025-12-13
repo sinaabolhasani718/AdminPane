@@ -1,14 +1,24 @@
 
 # 🛒 Admin Panel – Product Management Dashboard  
 پنل مدیریت محصولات با React + Redux Toolkit
+## 📸 Project Preview
 
----
+### Login Page
+![Login Page](public/preview/login.png)
+
+### Dashboard
+![Dashboard](public/preview/dashboard.png)
+
+### Products Management
+![Products](public/preview/products.png)
+
+
 
 ## 📌 درباره پروژه
 این پروژه یک **پنل مدیریت محصولات** است که برای تمرین مفاهیم توسعه فرانت‌اند با **React** و مدیریت وضعیت با **Redux Toolkit** طراحی شده است.  
 هدف پروژه ساخت یک داشبورد کامل با قابلیت‌های استاندارد یک سیستم واقعی است.
 
----
+
 
 ## 🚀 امکانات پروژه (Features)
 
@@ -42,7 +52,7 @@
 - نمایش لودینگ  
 - پیاده‌سازی درخواست‌های CRUD  
 
----
+
 
 ## 🛠️ تکنولوژی‌ها (Technologies)
 
@@ -55,65 +65,84 @@
 | Formik / Yup | اعتبارسنجی فرم‌ها |
 | TailwindCSS / MUI | استایل‌دهی (اختیاری) |
 
----
+
 
 ## 📂 ساختار پوشه‌ها (Folder Structure)
 
-```
-src/
- ├── api/
- ├── components/
- ├── features/
- │    ├── auth/
- │    └── products/
- ├── pages/
- ├── hooks/
- ├── utils/
- ├── store.js
- └── App.js
-```
 
----
+public/
+├── fonts/
+└── img/
+
+src/
+├── components/
+│   ├── context/
+│   │   └── UserContext.jsx
+│   ├── Header/
+│   │   ├── Header.jsx
+│   │   └── Header.module.css
+│   ├── Modals/
+│   │   ├── AddProductModal.jsx
+│   │   ├── EditProductModal.jsx
+│   │   └── DeleteProductModal.jsx
+│   └── ProductTable/
+│       ├── ProductTable.jsx
+│       └── ProductTable.module.css
+│
+├── pages/
+│   ├── Login.jsx
+│   ├── Register.jsx
+│   └── Dashboard.jsx
+│
+├── services/
+│   └── api.js
+│
+├── App.jsx
+├── main.jsx
+└── global.css
+
+
+
+
 
 ## ⚙️ نحوه اجرا (Installation & Run)
 
-### 1️⃣ کلون کردن پروژه  
-```bash
+### 1️⃣ کلون کردن پروژه 
 git clone https://github.com/your-username/admin-panel.git
 cd admin-panel
-```
+
 
 ### 2️⃣ نصب پکیج‌ها  
-```bash
+
 npm install
-```
+
 
 ### 3️⃣ اجرای پروژه  
-```bash
-npm run dev
-```
 
----
+npm run dev
+
+
+
 
 ## 🔧 تنظیمات API
 فایل `.env` را ایجاد کنید:
 
-```
-VITE_API_BASE_URL=https://your-backend-api.com
-```
 
----
+VITE_API_BASE_URL=https://your-backend-api.com
+
+
+
 
 ## 🤝 مشارکت (Contributing)
 Pull Request ها پذیرفته می‌شوند.  
 برای هر فیچر یک Branch جدا ایجاد کنید.
 
----
+
 
 ## 📜 لایسنس
 این پروژه تحت لایسنس MIT منتشر شده است.
 
----
+
 
 ## ✨ ساخته شده توسط:  
 **Sina Abolhasani**
