@@ -1,0 +1,38 @@
+.tableContainer {
+  width: 100%;
+  margin: 20px auto; /* وسط چین کردن */
+  /* padding: 10px 20px; */
+  border: 1px solid #e4e4e4;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  overflow-x: auto; /* برای ریسپانسیو */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table thead {
+  background-color: #f2f2f2;
+}
+
+.table thead th {
+  padding: 25px 15px;
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+}
+
+.table tbody td {
+  padding: 25px 15px;
+  color: #555;
+  border-bottom: 1px solid #f2f2f2;
+  text-align: center;
+}
+.iconImg {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}

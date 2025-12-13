@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { login } from "../services/auth";
+import { login } from "../services/api";
 import { useNavigate } from "react-router-dom";
 
 import styles from "../pages/Login.module.css";
@@ -18,7 +18,7 @@ function Login() {
     }
     try {
       const token = await login(username, password);
-      localStorage.setItem("token", token.token);
+      localStorage.setItem("token",token.token);
       console.log("login result", token);
 
       navigate("/dashboard");

@@ -1,0 +1,145 @@
+/* .backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  width: 380px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal h3 {
+  margin: 0;
+  text-align: center;
+}
+
+.modal input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.cancel {
+  background: #ccc;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submit {
+  background: #4e8df6;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+} */
+
+/* پس‌زمینه خاکستری مات */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+/* باکس مودال */
+.modal {
+  width: 520px;
+  background: #fff;
+  padding: 35px;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* عنوان */
+.title {
+  text-align: center;
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* لیبل + اینپوت */
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.fieldGroup label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #444;
+}
+
+/* اینپوت‌ها */
+.fieldGroup input {
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #e3e3e3;
+  background: #f7f7f7;
+  font-size: 14px;
+  outline: none;
+}
+
+.fieldGroup input:focus {
+  border-color: #4e8df6;
+}
+
+/* دکمه‌ها */
+.actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cancelBtn {
+  width: 45%;
+  background: #d4d4d4;
+  color: #333;
+  padding: 12px 0;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.submitBtn {
+  width: 45%;
+  background: #4e8df6;
+  color: white;
+  padding: 12px 0;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  cursor: pointer;
+}
